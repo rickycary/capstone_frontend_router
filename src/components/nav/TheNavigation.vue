@@ -3,7 +3,11 @@
         <nav>
             <ul>
                 <li>
-                    <router-link to="/">Coffee</router-link>
+                    <router-link to="/">Home</router-link>
+                </li>
+                <li>
+                    <router-link to="/coffee">The Coffee Page</router-link>
+
                 </li>
                 <li>
                     <router-link to="/new">Add a Coffee</router-link>
