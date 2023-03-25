@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>The Create Page</h1>
+        <h1>Add a Coffee</h1>
     </div>
 </template>
 
