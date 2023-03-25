@@ -46,4 +46,4 @@ Coming Soon
 [Trello Board](https://trello.com/invite/b/cga8KL5C/ATTI98fec7b2ec62b4839ef45b01538b5a5e2D7025EF/capstone-project)
 
 ### Link to Netlify 
-[Live Site] (https://papaya-vacherin-b92598.netlify.app/new)
+[Live Site] (https://papaya-vacherin-b92598.netlify.app/)
