@@ -1,0 +1,14 @@
+<template>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <button>Shops</button>
+                </li>
+                <li>
+                    <button>Coffee</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</template>
