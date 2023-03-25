@@ -3,10 +3,10 @@
         <nav>
             <ul>
                 <li>
-                    <button>Shops</button>
+                    <router-link to="/">Coffee</router-link>
                 </li>
                 <li>
-                    <button>Coffee</button>
+                    <router-link to="/new">Add a Coffee</router-link>
                 </li>
             </ul>
         </nav>
