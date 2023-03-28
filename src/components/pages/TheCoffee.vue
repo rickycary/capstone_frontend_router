@@ -5,7 +5,7 @@
         <ul>
           <li v-for="coffee in coffees" :key="coffee.id">
             <router-link :to="`/coffee/${coffee.id}`"><h1>{{ coffee.name }}</h1></router-link>
-            <h2>{{ coffee.addOns }}</h2>
+            <!-- <h2>{{ coffee.addOns }}</h2> -->
             <h2>{{ coffee.location }}</h2>
             </li>
         </ul>

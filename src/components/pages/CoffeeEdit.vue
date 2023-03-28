@@ -44,7 +44,7 @@ export default {
             const formData = {
                 name: this.coffee.name,
                 addOns: this.coffee.addOns,
-                location: this.coffee.location,
+                location: this.coffee.location
             };
             fetch(`https://coffee-backend.onrender.com/coffee/${id}`, {
                 method: "PUT", 
