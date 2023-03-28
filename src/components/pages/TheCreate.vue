@@ -1,25 +1,27 @@
 <template>
     <div class="mainCoffee">
+      <!-- Form to create a new coffee -->
       <h1>Add a New Coffee</h1>
       <form @submit.prevent="createCoffee">
+        <!-- Coffee Name -->
           <label for="name">Name:</label>
           <input 
             type="text" 
             name="name" 
             v-model="coffeeName"><br/>
-
+        <!-- Coffee Add ons -->
           <label for="addOns">Add Ons:</label>
           <input 
             type="text" 
             name="addOns" 
             v-model="coffeeAddOns"><br/>
-
+        <!-- Coffee Locations -->
           <label for="location">Location:</label>
           <input 
             type="text" 
             name="location" 
             v-model="coffeeLocation"><br/>
-
+        <!-- Submit Button -->
         <button type="submit">Create</button>
       </form>
     </div>
@@ -49,26 +51,23 @@
       })
       .then(response => response.json())
       .then(data => {
-        // Clear the form fields
+        // Clears the form fields
         this.coffeeName = '';
         this.coffeeAddOns = '';
         this.coffeeLocation = '';
         
         this.coffees.push(data);
-        // redirect to coffee
+        // Redirect route back to coffee page
         this.$router.push('/coffee/');
       })
       .then((response) => {
           if (response.ok) {
-            // Takes you back to the main coffee page
+        // Redirects route back to coffe page 
             this.$router.push(`/coffee/`);
           } else {
             throw new Error("Error creating coffee.");
           }
         })
-      .catch(error => {
-        console.error('Error creating new entry:', error);
-      });
     }
   }
 }
