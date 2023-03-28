@@ -1,5 +1,5 @@
 <template>
-    <div class="main">
+    <div>
       <h1>Add a New Coffee</h1>
       <form @submit.prevent="createCoffee">
           <label for="name">Name:</label>
