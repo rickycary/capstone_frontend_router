@@ -13,12 +13,22 @@
 </template>
 
 <script>
+// import axios from 'axios'
+
 export default {
   data() {
     return {
       coffees: []
     }
   },
+
+  // Axios Method
+  // axios.post('https://coffee-backend.onrender.com/coffee', {
+  //   name: coffee.name,
+  //   addOns: coffee.addOns,
+  //   locations: coffee.location,
+  // })
+
   mounted() {
     fetch('https://coffee-backend.onrender.com/coffee')
       .then(response => response.json())

@@ -6,13 +6,15 @@
             <h1>{{ coffee.addOns }}</h1>
             <h1>{{ coffee.location }}</h1>
         </div>
-        <router-link to="/new">Edit this Coffee</router-link>
+        <router-link :to="`/edit/${coffee._id}`">Edit this Coffee</router-link>
         <br>
         <button @click="deleteCoffee">Delete this Coffee</button>
     </div>
 </template>
 
 <script>
+// import axios from 'axios'
+
 export default {
     name: 'coffeeShowPage',
     data() {

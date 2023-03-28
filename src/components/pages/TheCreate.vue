@@ -1,5 +1,5 @@
 <template>
-    <div class="main">
+    <div class="mainCoffee">
       <h1>Add a New Coffee</h1>
       <form @submit.prevent="createCoffee">
           <label for="name">Name:</label>
@@ -26,6 +26,8 @@
 </template>
   
 <script>
+// import axios from 'axios'
+
   export default {
   data() {
     return {
