@@ -2,6 +2,7 @@
     <div class="mainCoffee">
       <!-- Form to create a new coffee -->
       <h1>Add a New Coffee</h1>
+      <div class="button">
       <form @submit.prevent="createCoffee">
         <!-- Coffee Name -->
           <label for="name">Name:</label>
@@ -24,6 +25,7 @@
         <!-- Submit Button -->
         <button type="submit">Create</button>
       </form>
+    </div>
     </div>
 </template>
   
@@ -74,5 +76,13 @@
 </script>
 
 <style>
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 3px solid #1a037e;
+}
 
 </style>

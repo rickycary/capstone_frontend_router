@@ -8,16 +8,16 @@
             <h1>{{ coffee.location }}</h1>
         </div>
         <!-- Router link to EDIT Page -->
-        <router-link :to="`/edit/${coffee._id}`"><button>Edit this Coffee</button></router-link>
-        <br>
+        <div class="button">
+        <router-link :to="`/edit/${coffee._id}`"><button >Edit this Coffee</button></router-link>
         <!-- Button to DELTETE Coffee -->
         <button @click="deleteCoffee">Delete this Coffee</button>
+        </div>
     </div>
 </template>
 
 <script>
 // import axios from 'axios'
-
 export default {
     name: 'coffeeShowPage',
     data() {
@@ -55,5 +55,29 @@ export default {
         }
     }
 }
-
 </script>
+
+
+<style>
+
+a {
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 3px solid #1a037e;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+</style>

@@ -1,13 +1,13 @@
 <template>
     <h1>The Coffee Page</h1>
-    <router-link to="/new">Add a Coffee</router-link>
+    <div class="button">
+    <router-link class="routerLink" to="/new"><button>Add a Coffee</button></router-link>
+  </div>
     <div v-if="coffees.length">
-        <ul>
-          <li v-for="coffee in coffees" :key="coffee.id">
+        <ul  v-for="coffee in coffees" :key="coffee.id">
             <router-link :to="`/coffee/${coffee.id}`"><h1>{{ coffee.name }}</h1></router-link>
             <!-- <h2>{{ coffee.addOns }}</h2> -->
             <h2>{{ coffee.location }}</h2>
-            </li>
         </ul>
       </div>
 </template>
@@ -46,5 +46,25 @@ export default {
 </script>
 
 <style scoped>
+
+a {
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 3px solid #1a037e;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
 
 </style>

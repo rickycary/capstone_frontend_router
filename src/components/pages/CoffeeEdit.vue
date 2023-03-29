@@ -1,6 +1,7 @@
 <template>
     <div class="coffeeMain">
       <h2>Edit Coffee</h2>
+      <div class="button">
       <form @submit.prevent="submitForm">
         <label for="name">Name</label>
         <input type="text" id="name" v-model="coffee.name" /><br/>
@@ -10,6 +11,7 @@
         <input type="text" id="location" v-model="coffee.location" /><br/>
         <button type="submit">Edit Coffee</button>
       </form>
+    </div>
     </div>
   </template>
 <script>
@@ -62,3 +64,15 @@
 }
 
 </script>
+
+<style>
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 3px solid #1a037e;
+}
+
+</style>
