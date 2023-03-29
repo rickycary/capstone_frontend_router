@@ -8,7 +8,7 @@
             <h1>{{ coffee.location }}</h1>
         </div>
         <!-- Router link to EDIT Page -->
-        <router-link :to="`/edit/${coffee._id}`">Edit this Coffee</router-link>
+        <router-link :to="`/edit/${coffee._id}`"><button>Edit this Coffee</button></router-link>
         <br>
         <!-- Button to DELTETE Coffee -->
         <button @click="deleteCoffee">Delete this Coffee</button>
