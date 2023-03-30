@@ -22,7 +22,7 @@
 header {
     width: 100%;
     height: 5rem;
-    background-color: #11005c;
+    background-color: #A9907E;
 }
 
 nav {
@@ -47,7 +47,7 @@ a {
     text-decoration: none;
     background: transparent;
     border: 1px solid transparent;
-    color: white;
+    color: #F3DEBA;
     padding: 0.5rem 1.5rem;
     display: inline-block;
 }
@@ -55,9 +55,9 @@ a {
 a:hover,
 a:active,
 a.active {
-    color: #f1a80a;
-    border-color: #f1a80a;
-    background-color: #1a037e;
+    color: #ABC4AA;
+    border-color: #ABC4AA;
+    background-color: #675D50;
 }
 
 </style>
