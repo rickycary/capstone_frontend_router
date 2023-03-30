@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mainShow">
         <!-- SHOW Page -->
         <h1>The Show Page</h1>
         <div v-if="coffee">
@@ -78,6 +78,14 @@ h1 {
 
 h2 {
   text-align: center;
+}
+
+.mainShow {
+    margin: 5px;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: gray;
 }
 
 </style>

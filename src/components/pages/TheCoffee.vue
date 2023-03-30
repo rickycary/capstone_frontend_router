@@ -1,5 +1,6 @@
 <template>
-    <h1>The Coffee Page</h1>
+  <body>
+    <h1 class="title">The Coffee Page</h1>
     <div class="button">
     <router-link class="routerLink" to="/new"><button>Add a Coffee</button></router-link>
   </div>
@@ -7,9 +8,10 @@
         <ul  v-for="coffee in coffees" :key="coffee.id">
             <router-link :to="`/coffee/${coffee.id}`"><h1>{{ coffee.name }}</h1></router-link>
             <!-- <h2>{{ coffee.addOns }}</h2> -->
-            <h2>{{ coffee.location }}</h2>
+            <!-- <h2>{{ coffee.location }}</h2> -->
         </ul>
       </div>
+    </body>
 </template>
 
 <script>
@@ -29,6 +31,7 @@ export default {
   //   locations: coffee.location,
   // })
 
+  // Mounted loads the data onto the page
   mounted() {
     fetch('https://coffee-backend.onrender.com/coffee')
       .then(response => response.json())
@@ -47,24 +50,9 @@ export default {
 
 <style scoped>
 
-a {
-  text-align: center;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  border: 3px solid #1a037e;
-}
-
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
+a, .title {
+  color: #11005c;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 </style>
