@@ -1,29 +1,29 @@
 <template>
     <div class="mainCoffee">
       <!-- Form to create a new coffee -->
-      <h1>Add a New Coffee</h1>
+      <h1 class="text">Add a New Coffee</h1>
       <div class="button">
       <form @submit.prevent="createCoffee">
         <!-- Coffee Name -->
-          <label for="name">Name:</label>
+          <label for="name" class="text">Name:</label>
           <input 
             type="text" 
             name="name" 
             v-model="coffeeName"><br/>
         <!-- Coffee Add ons -->
-          <label for="addOns">Add Ons:</label>
+          <label for="addOns" class="text">Add Ons:</label>
           <input 
             type="text" 
             name="addOns" 
             v-model="coffeeAddOns"><br/>
         <!-- Coffee Locations -->
-          <label for="location">Location:</label>
+          <label for="location" class="text">Location:</label>
           <input 
             type="text" 
             name="location" 
             v-model="coffeeLocation"><br/>
         <!-- Submit Button -->
-        <button type="submit">Create</button>
+        <button type="submit" class="text">Create</button>
       </form>
     </div>
     </div>
@@ -77,12 +77,23 @@
 
 <style>
 
+body {
+  background-color: #ddc8ba;
+}
+
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
   border: 3px solid #1a037e;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
 }
 
 </style>

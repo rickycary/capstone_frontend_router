@@ -3,11 +3,11 @@
       <h2>Edit Coffee</h2>
       <div class="button">
       <form @submit.prevent="submitForm">
-        <label for="name">Name</label>
+        <label for="name" class="text">Name:</label>
         <input type="text" id="name" v-model="coffee.name" /><br/>
-        <label for="addOns">Add Ons:</label>
+        <label for="addOns" class="text">Add Ons:</label>
         <input type="text" id="addOns" v-model="coffee.addOns" /><br/>
-        <label for="location">Location:</label>
+        <label for="location" class="text">Location:</label>
         <input type="text" id="location" v-model="coffee.location" /><br/>
         <button type="submit">Edit Coffee</button>
       </form>
@@ -67,12 +67,23 @@
 
 <style>
 
+body {
+  background-color: #ddc8ba;
+}
+
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
   border: 3px solid #1a037e;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
 }
 
 </style>

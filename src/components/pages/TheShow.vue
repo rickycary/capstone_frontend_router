@@ -1,17 +1,17 @@
 <template>
     <div class="mainShow">
         <!-- SHOW Page -->
-        <h1>The Show Page</h1>
+        <h1 class="text">The Show Page</h1>
         <div v-if="coffee">
-            <h1>{{ coffee.name }}</h1>
-            <h1>{{ coffee.addOns }}</h1>
-            <h1>{{ coffee.location }}</h1>
+            <h1 class="text">{{ coffee.name }}</h1>
+            <h1 class="text">{{ coffee.addOns }}</h1>
+            <h1 class="text">{{ coffee.location }}</h1>
         </div>
         <!-- Router link to EDIT Page -->
         <div class="button">
-        <router-link :to="`/edit/${coffee._id}`"><button >Edit this Coffee</button></router-link>
+        <router-link :to="`/edit/${coffee._id}`"><button class="text">Edit this Coffee</button></router-link>
         <!-- Button to DELTETE Coffee -->
-        <button @click="deleteCoffee">Delete this Coffee</button>
+        <button @click="deleteCoffee" class="text">Delete this Coffee</button>
         </div>
     </div>
 </template>
@@ -85,7 +85,6 @@ h2 {
     padding: 3px;
     border-radius: 4px;
     font-size: 18px;
-    background-color: gray;
 }
 
 </style>

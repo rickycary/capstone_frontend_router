@@ -1,14 +1,14 @@
 <template>
     <body>
     <div>
-        <h1>Primo Coffee</h1>
+        <h1 class="text">Primo Coffee</h1>
     </div>
     <div>
-        <h2>In Primo Coffee we keep track of your favorite coffee concoctions.</h2>
+        <h2 class="text">In Primo Coffee we keep track of your favorite coffee concoctions.</h2>
         <div class="images">
-        <a href="./coffee"><img src="../nav/southBoundCoffee.jpeg" alt="South Bound Coffee" height="250"></a>
-        <a href="./coffee"><img src="../nav/strandedCoffee.jpeg" alt="Stranded Coffee" height="250"></a>
-        <a href="./coffee"><img src="../nav/commonWealth.jpeg" alt="Common Wealth Coffee" height="250"></a>
+        <img src="../nav/southBoundCoffee.jpeg" alt="South Bound Coffee" height="250">
+        <img src="../nav/strandedCoffee.jpeg" alt="Stranded Coffee" height="250">
+        <img src="../nav/commonWealth.jpeg" alt="Common Wealth Coffee" height="250">
     </div>
     </div>
 
@@ -23,5 +23,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.text {
+    color: #11005c;
+    font-family: 'Courier New', Courier, monospace;
 }
 </style>

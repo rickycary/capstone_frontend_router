@@ -50,6 +50,7 @@ a {
     color: #F3DEBA;
     padding: 0.5rem 1.5rem;
     display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 a:hover,
