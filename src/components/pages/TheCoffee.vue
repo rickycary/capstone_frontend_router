@@ -1,6 +1,6 @@
 <template>
   <body>
-    <h1 class="title">The Coffee Page</h1>
+    <h1 class="title">Your Coffees</h1>
     <div class="button">
     <router-link class="routerLink" to="/new"><button class="button">Add a Coffee</button></router-link>
   </div>
@@ -28,7 +28,7 @@ export default {
   // axios.post('https://coffee-backend.onrender.com/coffee', {
   //   name: coffee.name,
   //   addOns: coffee.addOns,
-  //   locations: coffee.location,
+  //   locations: coffee.location
   // })
 
   // Mounted loads the data onto the page

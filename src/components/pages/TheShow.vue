@@ -1,7 +1,7 @@
 <template>
     <div class="mainShow">
         <!-- SHOW Page -->
-        <h1 class="text">The Show Page</h1>
+        <!-- <h1 class="text">The Show Page</h1> -->
         <div v-if="coffee">
             <h1 class="text">{{ coffee.name }}</h1>
             <h1 class="text">{{ coffee.addOns }}</h1>

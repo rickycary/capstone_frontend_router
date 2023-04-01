@@ -1,6 +1,6 @@
 <template>
     <div class="coffeeMain">
-      <h2>Edit Coffee</h2>
+      <h2>Edit your Coffee</h2>
       <div class="button">
       <form @submit.prevent="submitForm">
         <label for="name" class="text">Name:</label>
