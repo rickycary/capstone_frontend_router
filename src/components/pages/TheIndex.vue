@@ -25,6 +25,10 @@
     justify-content: space-around;
 }
 
+img {
+    border-radius: 50%;
+}
+
 .text {
     color: #11005c;
     font-family: 'Courier New', Courier, monospace;
