@@ -4,7 +4,7 @@
         <h1 class="text">Primo Coffee</h1>
     </div>
     <div>
-        <h2 class="text">In Primo Coffee we keep track of your favorite coffee concoctions.</h2>
+        <h2 class="text">In Primo Coffee we keep track of your favorite coffee concoctions so you don't have to.</h2>
         <div class="images">
         <img src="../nav/southBoundCoffee.jpeg" alt="South Bound Coffee" height="250">
         <img src="../nav/strandedCoffee.jpeg" alt="Stranded Coffee" height="250">
